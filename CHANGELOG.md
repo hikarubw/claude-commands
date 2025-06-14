@@ -45,7 +45,7 @@ Each remaining command provides complex, multi-step workflows that go beyond wha
 - Support for both user-level and project-level installation
 - One-line curl installation
 - Interactive installation mode
-- Cross-platform support (macOS, Linux, Windows)
+- Cross-platform support (macOS, Linux)
 - Language-agnostic commands that adapt to any programming language
 - Organized command structure with categories:
   - Core commands (init, dev, handover)

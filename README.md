@@ -8,22 +8,7 @@ This is my personal collection of Claude Code commands that I use for daily deve
 
 These commands are designed to work with any programming language - Claude automatically detects your project and adapts accordingly.
 
-### ⚠️ Token Usage Note
-The `plan` and `research` commands use deep critical thinking mode ("ultrathink") which consumes 5-10x more tokens than regular commands. Use them when you need thorough analysis and are willing to invest in comprehensive results.
-
 ## 🚀 Quick Start
-
-### ⚠️ Important: Reinstallation Warning
-
-**Reinstalling will overwrite ALL your local changes!**
-- Any commands you've modified will be replaced
-- Any commands you've deleted will return
-- Any custom commands you've added will be lost
-
-**Before reinstalling:**
-1. The installer will ask if you want to backup existing commands
-2. **Always choose "y" to backup** if you've made any local changes
-3. Backups are saved to `~/.claude/commands.backup.YYYYMMDD_HHMMSS`
 
 ### 1. Install Commands
 
@@ -31,7 +16,7 @@ The `plan` and `research` commands use deep critical thinking mode ("ultrathink"
 
 **Install globally (recommended for personal use):**
 ```bash
-curl -sSL https://raw.githubusercontent.com/hikarubw/claude-commands/main/install-curl.sh | bash -s -- --user
+curl -sSL https://raw.githubusercontent.com/hikarubw/claude-commands/main/install.sh | bash -s -- --user
 ```
 
 **Or clone and install:**
@@ -72,6 +57,9 @@ Only 6 commands that add real value beyond what Claude already does well:
 - **`/user:handover`** - Prepare session handover documentation
 - **`/user:research`** - Deep technical research using critical thinking mode ("ultrathink") ⚠️ *High token usage*
 
+### ⚠️ Token Usage Note
+The `plan` and `research` commands use deep critical thinking mode ("ultrathink") which consumes 5-10x more tokens than regular commands. Use them when you need thorough analysis and are willing to invest in comprehensive results.
+
 ### Why So Few Commands?
 
 I removed commands for things Claude already does well:
@@ -90,6 +78,18 @@ These 6 commands provide complex workflows that go beyond simple tasks.
 - **Smart defaults** - Claude figures out the details
 
 ## 🛠️ Managing Your Custom Commands
+
+### ⚠️ Important: Reinstallation Warning
+
+**Reinstalling will overwrite ALL your local changes!**
+- Any commands you've modified will be replaced
+- Any commands you've deleted will return
+- Any custom commands you've added will be lost
+
+**Before reinstalling:**
+1. The installer will ask if you want to backup existing commands
+2. **Always choose "y" to backup** if you've made any local changes
+3. Backups are saved to `~/.claude/commands.backup.YYYYMMDD_HHMMSS`
 
 ### Preserving Local Changes
 
@@ -116,14 +116,31 @@ Since reinstalling overwrites everything, here are strategies to keep your custo
    cp ~/.claude/commands.my-backup/custom/* ~/.claude/commands/custom/
    ```
 
-## 📖 Want to Fork?
+## 🍴 For Repository Forkers
 
-Feel free to fork this repo and customize the commands for your own workflow. The commands are just markdown files with instructions for Claude.
+If you're forking this repository to create your own command collection:
 
-To use with your own GitHub:
+### Configure Your Fork
+
+After forking, you need to update all references from my GitHub username to yours:
+
 ```bash
-./setup-repo.sh YOUR_GITHUB_USERNAME
+# Clone your fork
+git clone https://github.com/YOUR_USERNAME/claude-commands.git
+cd claude-commands
+
+# Run the configuration script
+./configure-fork.sh your-github-username
 ```
+
+This script will:
+- Replace all instances of 'hikarubw' with your GitHub username
+- Update installation URLs in documentation
+- Prepare your fork for distribution
+
+⚠️ **Note**: Regular users should NOT run this script. It's only for repository forkers.
+
+## 📖 Documentation
 
 See [docs](docs/) for more details about how the commands work.
 

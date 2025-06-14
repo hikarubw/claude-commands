@@ -5,27 +5,26 @@
 ### User-Level Installation (Global)
 ```bash
 # Install for all projects
-curl -sSL https://raw.githubusercontent.com/hikarubw/claude-commands/main/install-curl.sh | bash -s -- --user
+curl -sSL https://raw.githubusercontent.com/hikarubw/claude-commands/main/install.sh | bash -s -- --user
 ```
 
 ### Project-Level Installation
 ```bash
 # Install for current project
-curl -sSL https://raw.githubusercontent.com/hikarubw/claude-commands/main/install-curl.sh | bash -s -- --project
+curl -sSL https://raw.githubusercontent.com/hikarubw/claude-commands/main/install.sh | bash -s -- --project
 
 # Install for specific project
-curl -sSL https://raw.githubusercontent.com/hikarubw/claude-commands/main/install-curl.sh | bash -s -- --project /path/to/project
+curl -sSL https://raw.githubusercontent.com/hikarubw/claude-commands/main/install.sh | bash -s -- --project /path/to/project
 ```
 
 ### Interactive Installation
 ```bash
 # Choose installation type interactively
-curl -sSL https://raw.githubusercontent.com/hikarubw/claude-commands/main/install-curl.sh | bash
+curl -sSL https://raw.githubusercontent.com/hikarubw/claude-commands/main/install.sh | bash
 ```
 
 ## Install via Git Clone
 
-### macOS/Linux
 ```bash
 # Clone the repository
 git clone https://github.com/hikarubw/claude-commands.git
@@ -38,16 +37,6 @@ cd claude-commands
 ./install.sh --user              # Install globally
 ./install.sh --project           # Install for current project
 ./install.sh --project /path     # Install for specific project
-```
-
-### Windows
-```powershell
-# Clone the repository
-git clone https://github.com/hikarubw/claude-commands.git
-cd claude-commands
-
-# Run the install script
-.\install.ps1
 ```
 
 ## Installation Options
@@ -113,19 +102,13 @@ To update to the latest version:
 ```bash
 cd claude-commands
 git pull
-./install.sh  # or .\install.ps1 on Windows
+./install.sh
 ```
 
 ## Uninstalling
 
-### macOS/Linux
 ```bash
 ~/.claude/uninstall-commands.sh
-```
-
-### Windows
-```powershell
-~\.claude\uninstall-commands.ps1
 ```
 
 Or manually remove:
