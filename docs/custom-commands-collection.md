@@ -12,7 +12,7 @@ mkdir -p .claude/commands
 mkdir -p ~/.claude/commands
 
 # Copy a command (example)
-cp examples/commands/optimize.md .claude/commands/
+# Save any of the commands below as .md files in your commands directory
 ```
 
 ## Development Commands
