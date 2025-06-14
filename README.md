@@ -1,10 +1,10 @@
-# My Claude Commands
+# Claude Commands
 
-> Personal collection of custom commands for Claude Code
+> Essential custom commands for Claude Code
 
 ## Overview
 
-This is my personal collection of Claude Code commands that I use for daily development. Feel free to use or fork them if you find them helpful.
+A curated collection of Claude Code commands optimized for daily development workflows. These commands provide complex, multi-step operations that go beyond Claude's standard capabilities.
 
 These commands are designed to work with any programming language - Claude automatically detects your project and adapts accordingly.
 
@@ -46,7 +46,7 @@ cd claude-commands
 /user:handover
 ```
 
-## 📦 My Essential Commands
+## 📦 Essential Commands
 
 Only 6 commands that add real value beyond what Claude already does well:
 
@@ -62,7 +62,7 @@ The `plan` and `research` commands use deep critical thinking mode ("ultrathink"
 
 ### Why So Few Commands?
 
-I removed commands for things Claude already does well:
+Commands were removed for things Claude already does well:
 - Building projects? Just ask: "build my project"
 - Running tests? Just ask: "run tests"
 - Debugging? Just ask: "debug this error"
@@ -70,7 +70,7 @@ I removed commands for things Claude already does well:
 
 These 6 commands provide complex workflows that go beyond simple tasks.
 
-## 🌟 Why I Made These
+## 🌟 Why These Commands Exist
 
 - **Language agnostic** - Works with any programming language
 - **Saves time** - Common tasks automated
@@ -122,7 +122,7 @@ If you're forking this repository to create your own command collection:
 
 ### Configure Your Fork
 
-After forking, you need to update all references from my GitHub username to yours:
+After forking, you need to update all references from the original GitHub username to yours:
 
 ```bash
 # Clone your fork
