@@ -1,0 +1,63 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+
+# Test coverage
+coverage/
+.nyc_output
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# User-specific files
+*.local
+
+# Backup files
+*.backup
+*.bak
+backup/
+
+# Private or draft files
+private/
+drafts/
+TODO.md
+NOTES.md
+
+# Session-specific files
+SESSION_SUMMARY.md
+.claude/session-state.json
+
+# Build outputs
+dist/
+build/
+out/
