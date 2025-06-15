@@ -38,5 +38,3 @@ While Claude can run individual checks, this command:
 - Show progress for long-running checks
 - Cache results when appropriate
 - Focus on actionable items, not just data
-
-$ARGUMENTS

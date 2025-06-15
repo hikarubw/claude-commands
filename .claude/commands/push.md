@@ -30,5 +30,3 @@ While Claude can commit and push, this command:
 - Prevents common mistakes (secrets, debug code)
 - Monitors CI/CD results
 - Provides a complete workflow in one command
-
-$ARGUMENTS
