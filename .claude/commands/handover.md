@@ -20,12 +20,20 @@ Create a comprehensive handover package that allows the next session (with you o
 - **Clean up debug code** and temporary files
 
 ### 3. Update Project Documentation
-- **Update CLAUDE.md** with:
+**IMPORTANT**: You MUST create or update these documentation files using the Write/Edit tools:
+
+- **Update or create `CLAUDE.md`** in the project root (not .claude/) with:
   - Current project state
   - Recent architectural decisions
   - Important context discovered
   - Dependencies or setup changes
   - Known issues or limitations
+  - Session date and highlights
+  - Key decisions made during this session
+  - Unresolved issues
+  - Next session priorities
+  
+  Note: This file is automatically loaded by Claude Code at the start of each session
   
 - **Update README.md** if needed with:
   - New features added
@@ -33,7 +41,9 @@ Create a comprehensive handover package that allows the next session (with you o
   - Updated usage examples
 
 ### 4. Create Session Summary
-Generate a `SESSION_SUMMARY.md` file containing:
+**CRITICAL**: You MUST create a file named `SESSION_SUMMARY.md` in the project root directory using the Write tool.
+
+Create SESSION_SUMMARY.md with the following content:
 
 ```markdown
 # Session Summary - [DATE]
@@ -74,17 +84,7 @@ Generate a `SESSION_SUMMARY.md` file containing:
 - Configuration changes
 - Required tools/services
 - Test data locations
-```
 
-### 5. Code State Verification
-- **Run all tests** to ensure nothing is broken
-- **Check linting** to ensure code quality
-- **Verify build** succeeds
-- **Document any failing tests** with explanation
-
-### 6. Create Quick Start Guide
-Add section to summary for next session:
-```markdown
 ## Quick Start for Next Session
 
 1. Pull latest changes: `git pull`
@@ -99,37 +99,44 @@ Add section to summary for next session:
 - Deploy: [command]
 ```
 
-### 7. Organize Open Files/Tabs
-Create a `.claude/session-state.json` with:
+### 5. Code State Verification
+- **Run all tests** to ensure nothing is broken
+- **Check linting** to ensure code quality
+- **Verify build** succeeds
+- **Document any failing tests** with explanation
+
+### 6. Create Session State File
+**Optional but recommended**: Create a `.claude/session-state.json` file with:
 - List of files that were being actively worked on
 - Current directory context
 - Any important file locations
 - Relevant documentation links
 
-### 8. Handle Sensitive Information
+### 7. Handle Sensitive Information
 - **Remove any credentials** from code
 - **Clear sensitive logs**
 - **Document where to find** secure configurations
 - **Note any API keys needed** (but not the keys themselves)
 
-### 9. Final Checklist
+### 8. Final Checklist
 Before ending session, verify:
 - [ ] All valuable work is committed
 - [ ] Tests are passing (or failures documented)
 - [ ] Documentation is updated
-- [ ] Session summary is complete
+- [ ] SESSION_SUMMARY.md is created
+- [ ] CLAUDE.md is updated (in project root)
 - [ ] No sensitive data in repository
 - [ ] Clear next steps documented
 
 ## Output Format
 
-Provide a final report:
+After creating all necessary files, provide a final report:
 ```
 Session Handover Complete ✅
 
-📄 Files Updated:
-- CLAUDE.md (project context)
-- SESSION_SUMMARY.md (today's work)
+📄 Files Created/Updated:
+- SESSION_SUMMARY.md (created)
+- CLAUDE.md (updated)
 - README.md (if needed)
 
 📝 Commits Created: [count]
@@ -145,6 +152,12 @@ Session Handover Complete ✅
 
 Time Saved for Next Session: ~[estimate] minutes
 ```
+
+## CRITICAL REMINDERS
+1. **YOU MUST CREATE SESSION_SUMMARY.md** - Use the Write tool to create this file
+2. **YOU MUST UPDATE CLAUDE.md** - Use Write/Edit tool to update or create this file in the project root
+3. **DO NOT just describe what should be in the files** - Actually create them
+4. **The handover is NOT complete** until both files exist with real content
 
 ## Special Considerations
 
@@ -175,3 +188,4 @@ If building a new feature:
 - Include enough context for someone unfamiliar
 - Highlight any non-obvious decisions
 - Make next steps crystal clear
+- ALWAYS create the actual files, don't just plan to create them
