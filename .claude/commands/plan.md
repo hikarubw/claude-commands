@@ -40,7 +40,9 @@ Use "ultrathink" mode to create a detailed project plan. Engage deep critical th
    Create phased plan with realistic timelines.
 
 6. **Documentation**
-   Generate Architecture Decision Records, technical specifications, risk assessment, and resource planning. Update CLAUDE.md with key decisions.
+   - Create an Architecture Decision Record (ADR) for major architectural choices
+   - Update CLAUDE.md with project overview, key decisions, and implementation plan
+   - Append to CLAUDE.md: "Keep maintaining ADRs whenever architecture decisions are made"
 
 ## Output Format
 Deliver comprehensive markdown document with:
